@@ -1,14 +1,5 @@
 # Create a SQL Server AlwaysOn Availability Group in an existing Azure VNET and Active Directory domain across Availability Zones using an Internal Load Balancer
 
-![Azure Public Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/PublicLastTestDate.svg)
-![Azure Public Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/PublicDeployment.svg)
-
-![Azure US Gov Last Test Date](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/FairfaxLastTestDate.svg)
-![Azure US Gov Last Test Result](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/FairfaxDeployment.svg)
-
-![Best Practice Check](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/BestPracticeResult.svg)
-![Cred Scan Check](https://azurequickstartsservice.blob.core.windows.net/badges/301-sql-alwayson-md-ilb-zones/CredScanResult.svg)
-
 *Tests executed on 11/18/2019 show this template is working fine on Azure Public, despite the status of the above badges. You need to provision an AD domain and a virtual network with correct DSN resolution for domain names.*
 
 This template will create a SQL Server AlwaysOn Availability Group using the PowerShell DSC Extension in an existing Azure Virtual Network and Active Directory environment. Both SQL Server 2016 and SQL Server 2017 are supported by this template. The SQL Server VMs will be provisioned across multiple Azure Availability Zones and requests will be directed to the Listener using the Internal Load Balancer (ILB) Standard.

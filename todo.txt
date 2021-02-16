@@ -1,0 +1,5 @@
+**TODO**
+1) Cloud witness storage account in different region - australia east for SQL VMs and Australia Central for CW
+2) CW storage type - StorageV2 (GP2) LRS
+3) Enable SQL VMs change tracking once deployed
+4) Add MCS - SQL Availability Group Failover Notification - action group

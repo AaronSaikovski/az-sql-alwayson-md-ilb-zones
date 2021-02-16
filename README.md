@@ -18,7 +18,7 @@ To deploy the sample via the command line (using [Azure PowerShell or the Azure 
 Simple execute the script and pass in the folder name of the sample you want to deploy.  For example:
 
 ```PowerShell
-.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'eastus2' -ArtifactsStagingDirectory '[foldername]'
+.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'australiaeast' -ArtifactsStagingDirectory '[foldername]'
 ```
 ```bash
 azure-group-deploy.sh -a [foldername] -l eastus2 -u
@@ -28,10 +28,10 @@ You can optionally specify a storage account to use, if so the storage account m
 one will be created by the script or reused if it already exists (think of this as "temp" storage for AzureRM).
 
 ```PowerShell
-.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'eastus2' -ArtifactsStagingDirectory 'az-sql-alwayson-md-ilb-zones' -UploadArtifacts 
+.\Deploy-AzureResourceGroup.ps1 -ResourceGroupLocation 'australiaeast' -ArtifactsStagingDirectory 'az-sql-alwayson-md-ilb-zones' -UploadArtifacts 
 ```
 ```bash
-azure-group-deploy.sh -a '301-sql-alwayson-md-ilb-zones' -l eastus2 -u
+azure-group-deploy.sh -a '301-sql-alwayson-md-ilb-zones' -l australiaeast -u
 ```
 Tags: ``cluster, ha, sql, sql server 2016, sql server 2017, alwayson, availability zones``
 

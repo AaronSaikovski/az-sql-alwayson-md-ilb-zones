@@ -30,7 +30,7 @@
       "value": "sqlSubnet"
     },
     "_artifactsLocation": {
-      "value": "https://raw.githubusercontent.com/AaronSaikovski/az-sql-alwayson-md-ilb-zones/main/"
-    }
+      "value": "<SOME PUBLIC URL>"
+    }    
   }
 }

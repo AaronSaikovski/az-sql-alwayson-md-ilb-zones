@@ -4,7 +4,7 @@
   "parameters": {
     "location": {
       "type": "string",
-      "defaultValue": "eastus2",
+      "defaultValue": "australiaeast",
       "metadata": {
         "description": "Azure region that supports Availability Zones"
       }
@@ -22,7 +22,7 @@
       "metadata": {
         "description": "Size of the SQL Server VMs to be created"
       },
-      "defaultValue": "Standard_DS3_v2"
+      "defaultValue": "Standard_DS2_v2"
     },
     "sqlVMImage": {
       "type": "string",
@@ -42,7 +42,7 @@
        "metadata": {
             "description": "SQL Image Sku"
         },
-        "defaultValue": "SQLDEV"
+        "defaultValue": "Enterprise"
     },
     "vmCount": {
       "type": "int",
@@ -117,7 +117,7 @@
     },
     "existingSubnetName": {
       "type": "string",
-      "defaultValue": "sqlSubnet",
+      "defaultValue": "sql-vnet-subnet",
       "metadata": {
         "description": "Name of the existing subnet in the existing VNET to which the SQL Server VMs should be deployed"
       }
